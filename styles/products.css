@@ -1,0 +1,38 @@
+/* Styling for our Products Page */
+body {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+/* Styling for all the images in the Product Page */
+.product img,
+.product-bestselling img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+/* Styling for the first row of products */
+.product,
+.product-bestselling {
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  margin-top: 150px;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+/* Styling for Best Selling section */
+.product-bestselling {
+  margin-top: 50px;
+}

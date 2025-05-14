@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css"> <!-- To link the main CSS stylesheet which is the styling for all the webpages for the website -->
+    <link rel="stylesheet" href="styles/contact.css"> <!-- To link CSS stylesheet for the Contact page styling -->
+
+    <script src="script/script.js" defer></script> <!-- To link JavaScript -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--- This JavaScrip is used to call the social media icons from "https://ionic.io/ionicons" -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Contact</title>
+
+  </head>
+
+  <body>
+    <header class="header-main">
+      <nav class="navbar"> 
+        <div class="brand-title"><a href="index.html">Code Ninja<img src="images/heroimage.png" alt=""></a></div>
+        <a class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contact-us">
+      <div class="title">
+        <h2>Get in touch with us.</h2>
+      </div>
+      
+      <div class="box">
+        <!-- This is our contact us form for the customer's to key in his/her details -->
+        <div class="contact form">
+          <h3>Send us a message</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" placeholder="John">
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="Doe">
+                </div>  
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="text" placeholder="johndoe@email.com">
+                </div>
+                <div class="inputBox">
+                  <span>Mobile</span>
+                  <input type="text" placeholder="0123456789">
+                </div>  
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea placeholder="Write your message here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Infomation box -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div class="infoBox">
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+              <p>Kuala Lumpur, Malaysia</p>
+            </div>
+            <div>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <a href="mailto:loremipsum@email.com">codeninja@ninja.com</a>
+            </div>
+            <div>
+              <span><ion-icon name="call"></ion-icon></span>
+              <a href="tel:0101211234">010 121 1234</a>
+            </div>
+            <ul class="sci">
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <!-- <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Map section -->
+        <div class="contact map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15934.074662746532!2d101.7182172!3d3.2201537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1697466406619!5m2!1sen!2smy"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- The footer section of our website -->
+    <footer>
+
+      <ul class="social-icon"> <!-- This Unordered List contains the social media icon in the footer -->
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+
+      <ul class="menu"> <!-- This Unordered List contains the the sitemap in the footer -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- This is for the copyright -->
+      <p>&#169; 2023 Code Ninja Sdn. Bhd. (281429-M), All rights reserved.</p>
+
+    </footer>
+    
+  </body>
+</html>

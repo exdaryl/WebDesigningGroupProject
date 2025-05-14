@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: Calibri; /* This is the font that will be used through the entire website */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; 
+}
+
+/* Styling for the Header Navigation Bar for the entire website */
+.header-main {
+  position: fixed; /* This is to make the navigation bar stay at the top of the webpage when scrolling down the page */
+  top: 0;
+  z-index: 1000; /* This make sure the navigation bar is in front of all contents when scrolling down the page */
+  width: 100%;
+  background-color: white;
+}
+
+/* Navigation bar styling for the entire website */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 3px solid black;
+}
+
+.brand-title a{
+  font-size: 25px;
+  color:black;
+  text-decoration: none;
+  font-weight: 700; /* This is to make the font more bold */
+  font-size: 35px; /* This is to make the font size larger than the default size */
+  margin: 20px;
+}
+
+.brand-title img { /* This is the styling for the Logo at the navigation bar */
+  width: 40px;
+  height: 30px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li { 
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-links li a { /* Styling for the anchor tag in the nav bar */
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 25px;
+  font-size: 23px;
+}
+
+.navbar-links li:hover { /* Styling for the nav bar links as we hover on them */
+  background-color: grey;
+}
+
+.toggle-button { /* Style for the toggle button when in mobile view */
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.toggle-button .bar { 
+  height: 4px;
+  width: 100px;
+  background-color: black;
+}
+
+/* Styling for the Footer for the entire website */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #141414;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+footer .social-icon, /* Styling for the menu and social media icons */
+footer .menu  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social-icon li a
+{
+  font-size: 2em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icon li a:hover { 
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.50;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* Responsive Design for the footer */
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .brand-title a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .brand-title img{
+    margin-top: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li:hover {
+    background-color: grey;
+  }
+}

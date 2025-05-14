@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css"> <!-- To link the main CSS stylesheet which is the styling for all the webpages for the website -->
+    <link rel="stylesheet" href="styles/index.css"> <!-- To link CSS stylesheet for the index page styling -->
+
+    <script src="script/script.js" defer></script> <!-- To link JavaScript for the toggle button at mobile view size -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--- JavaScrip is used to call the social media icons from "https://ionic.io/ionicons" -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Code Ninja</title>
+
+  </head>
+
+  <body>
+    <!-- The Navigation bar for the entire website -->
+    <header class="header-main">
+      <nav class="navbar"> 
+        <div class="brand-title"><a href="index.html">Code Ninja<img src="images/heroimage.png" alt=""></a></div> <!-- This is for the company name and the logo, when clicked it will bring you back to the index page -->
+
+        <a class="toggle-button"> <!-- This is for a toggle button for mobile view, it will appear when minimised to a mobile view size -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="navbar-links"> <!-- This is for the navigation bar link to other webpages in the website  -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- The Hero Section of our website -->
+    <main> 
+      <div class="main-intro">
+        <h1>Welcome to<br> Code Ninja</h1>
+        <p>Shop here without<br>any hassle and enjoy<br>free shipping.</p>
+      </div>
+
+      <div class="main-reviews">
+        <p>Fast and<br>free shipping<br>when purchasing<br>with Code Ninja.<br>-Customer 124</p>
+        <p>Affordable pricing<br>and super<br>convenient.<br>-Customer 159</p>
+      </div>
+    </main>
+    
+    <!-- The Top Products Section of our website -->
+    <section>
+      <!-- First container for top selling item -->
+      <div class="first-box"> 
+        <div>
+          <img class="first-product-pic" src="images/topselling-img.jpg">
+        </div>
+        <div class="first-product-desc">
+          <P>&#x23;1 Top selling item of all time&#46; Check it out&#46;</P>
+        </div>
+      </div>
+
+      <!-- Second container for best selling item -->
+      <div class="second-box"> 
+        <div class="second-box-desc">
+          <p>Best seller of last month&#46; Get it now&#46;</p>
+        </div>
+        <div><img class="second-product-pic" src="images/lastmonth-img.jpg"></div>
+      </div>
+    </section>
+
+    <!-- The footer section of our website -->
+    <footer>
+      
+      <ul class="social-icon"> <!-- This Unordered List contains the social media icon in the footer -->
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+
+      <ul class="menu"> <!-- This Unordered List contains the the sitemap in the footer -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- This is for the copyright in the footer -->
+      <p>&#169; 2023 Code Ninja Sdn. Bhd. (281429-M), All rights reserved.</p>
+    
+    </footer>
+
+  </body>
+</html>

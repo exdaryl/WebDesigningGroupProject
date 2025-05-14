@@ -1,0 +1,160 @@
+/* Styling for the first box using Grid Box */
+.first-box {
+  position: relative;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 300px 1fr;
+  padding: 50px 120px 40px;
+  margin-top: 5px;
+}
+
+/* Styling for the second box using Grid Box */
+.second-box {
+  position: relative;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 300px; 
+  padding: 0px 120px
+}
+
+/* Styling for both images in the Top Products section */
+.first-product-pic,
+.second-product-pic {
+   width: 100%;
+   height: 300px;
+   border: 2px solid black;
+   box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+/* Styling for the description boxes */
+.first-product-desc,
+.second-box-desc {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px solid black;
+  background-color: rgb(242, 242, 215);
+  box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+/* Styling for the secpnd box description */
+.second-box-desc {
+  background-color: rgb(212, 228, 236);
+}
+
+.first-product-desc, /* This is the styling for the font in the description box */
+.second-box-desc p {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/* Styling for the Ninja image for the Hero Section */
+main {
+  width: 100%;
+  height: 75vh; /* View Height is used for the length of the Hero Section */
+  margin-top: 80px;
+  background-image: url(../images/heroimage.png); /* Image for the Hero Section */
+  background-size: 100vh, cover;
+  background-repeat: no-repeat; /* This is to make the picture for repeating itself in the page */
+  background-position: bottom, center; /* This is to position where the picture will be located at */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+main .main-intro h1 { /* Styling for the greeting in the Hero section */
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+  width: fit-content;
+}
+
+main p { /* Styling for the font in the Hero Section */
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  color: red; /* This is to change the colour of the word in the Hero */
+}
+
+main .main-reviews p { /* Styling to put the line next to the customer reviews in the Hero Section */
+  border-left: 2px solid black;
+  padding: 5px;
+}
+
+main .main-intro { /* Styling for the place of words in the Hero Section */
+  position: relative;
+  right: 15vh;
+  padding-bottom: 20px;
+}
+
+main .main-reviews { 
+  position: relative;
+  left: 13vh;
+  padding-bottom: 13.5px;
+}
+
+/* Responsive Design for Main Content */
+@media (max-width: 991px) {
+  body {
+    background: white ;
+  }
+
+  .first-box,
+  .second-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first-product-pic"
+    "first-product-desc"
+    "second-product-pic"
+    "second-box-desc";
+  }
+
+  main {
+    width: 100%;
+    height: 40vh;
+    margin-top: 70px;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+    z-index: 100;
+  }
+
+  main .main-intro h1 {
+    font-size: 50px;
+    line-height: 50px;
+    display: block;
+    color: black;
+    width: fit-content;
+  }
+  
+  main p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    color: red;
+  }
+  
+  main .main-reviews p {
+    border-left: 2px solid black;
+    padding: 5px;
+  }
+  
+  main .main-intro {
+    position: relative;
+    right: 0;
+    padding-bottom: 20px;
+  }
+  
+  main .main-reviews {
+    display: none;
+  }
+}

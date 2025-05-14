@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css"> <!-- To link the main CSS stylesheet which is the styling for all the webpages for the website -->
+    <link rel="stylesheet" href="styles/products.css"> <!-- To link CSS stylesheet for the Products page styling -->
+
+    <script src="script/script.js" defer></script> <!-- To link JavaScript for the toggle button at mobile view size -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--- This JavaScrip is used to call the social media icons from "https://ionic.io/ionicons" -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <title>Products</title>
+
+  </head>
+  
+  <body>
+
+    <!-- The Navigation bar for the entire website -->
+    <header class="header-main">
+      <nav class="navbar"> 
+        <div class="brand-title"><a href="index.html">Code Ninja<img src="images/heroimage.png" alt=""></a></div>
+        <a class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- The Product category for the website -->
+    <div class="product">
+      <h2>Cap</h2>
+      <img class="pictures" src="images/capimage.jpg" />
+      <p>Description: Stay cool and protected with our stylish cap.</p>
+      <p>Price: RM19.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>Watch</h2>
+      <img class="pictures" src="images/lastmonth-img.jpg" />
+      <p>Description: A stylish and elegant watch for all occasions.</p>
+      <p>Price: RM99.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>T-Shirt</h2>
+      <img class="pictures" src="images/topselling-img.jpg" />
+      <p>Description: Comfortable and trendy t-shirt for everyday wear.</p>
+      <p>Price: RM14.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-bestselling">
+      <h2>Best Selling Product</h2>
+      <img class="pictures" src="images/topselling-img.jpg" />
+      <p>Description: Our top-rated product with great features.</p>
+      <p>Price: RM99.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- The footer section of our website -->
+    <footer>
+
+      <ul class="social-icon"> <!-- This Unordered List contains the social media icon in the footer -->
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+
+      <ul class="menu"> <!-- This Unordered List contains the the sitemap in the footer -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- This is for the copyright -->
+      <p>&#169; 2023 Code Ninja Sdn. Bhd. (281429-M), All rights reserved.</p>
+    
+    </footer>
+    
+  </body>
+</html>
